@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Header: React.FC = () => {
     return(
-        <div className="bg-gray-200 shadow-md">
+        <div className="bg-gray-200 shadow-md m-2">
             <div className="flex justify-between items-center max-w-7xl mx-auto p-4">
                 <div className="text-3xl text-bold">SiteLogo</div>
                 <div className="grid grid-row">
