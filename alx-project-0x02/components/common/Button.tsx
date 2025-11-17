@@ -1,7 +1,7 @@
 import React from "react";
-import { ButtonPros } from "@/interfaces";
+import { type ButtonProps } from "@/interfaces";
 
-const Button: React.FC<ButtonPros> = ({
+const Button: React.FC<ButtonProps> = ({
     label,
     size="medium",
     shape='rounded-md',
