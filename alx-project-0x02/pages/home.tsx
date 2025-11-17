@@ -61,14 +61,11 @@ const HomePage: React.FC = () =>{
                 </div>
             </div>
             <div className="p-8 space-y-6">
-                <h1 className="text-3xl font-bold">Home Page</h1>
-
                 <div className="flex gap-4">
                     <button onClick={() => setIsModalOpen(true)} className="rounded bg-green-600 px-4 py-2 text-white"> Add New Post</button>
                 </div>
-
                 <PostModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} onSubmit={addPost}/>
-                    <div className="grid gap-4">
+                    <div className="grid grid-cols-3 gap-4">
                         {posts.map((post, i) => (<Card key={i} title={post.title} content={post.content} />))}
                     </div>
             </div>
