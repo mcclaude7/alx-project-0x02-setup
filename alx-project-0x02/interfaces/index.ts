@@ -1,3 +1,7 @@
+export interface Address{
+    street: string;
+    city: string;
+}
 export interface CardProps{
     title: string;
     content: string;
@@ -14,4 +18,9 @@ export interface PostProps {
     userId: number;
     title: string;
     content: string;
+}
+export interface UserProps {
+    name: string;
+    email: string;
+    address: Address;
 }
